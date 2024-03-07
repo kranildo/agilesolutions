@@ -18,8 +18,7 @@ export class ConfigsService {
     return this.registerView;
   }
 
-  public setRegisterView(value:boolean):void {
-    alert(value)
+  public setRegisterView(value:boolean):void { 
     this.registerView=value;
   }
 }
