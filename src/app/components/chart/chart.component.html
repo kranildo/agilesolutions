@@ -1,0 +1,20 @@
+<div class="mx-auto mt-2 mb-2" ><div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary" (click)="setCategory()">Category</button>
+    <button type="button" class="btn btn-primary" (click)="setProduct()">Product</button>
+    <button type="button" class="btn btn-primary" (click)="setBrand()">Brand</button>
+  </div>
+</div>
+<div class="chart">
+  <canvas
+    baseChart
+    [type]="'line'"
+    [data]="lineChartData"
+    [options]="lineChartOptions"
+    [legend]="lineChartLegend"
+    class="my-4 w-100"
+    id="myChart"
+    width="1071"
+    height="452"
+    style="display: block; box-sizing: border-box; height: 452px; width: 1071px"
+  ></canvas>
+</div>

@@ -1,0 +1,9 @@
+<main class="main">
+  <app-header *ngIf="this.loginSrv.getIsLoggedIn()"></app-header>
+    <router-outlet *ngIf="this.loginSrv.getIsLoggedIn()" />
+  <div class="content">
+    <app-login *ngIf="!this.loginSrv.getIsLoggedIn() && !this.loginSrv.configs.getRegisterView()"></app-login>
+    <app-register *ngIf="!this.loginSrv.getIsLoggedIn() && this.loginSrv.configs.getRegisterView()"></app-register>
+
+  </div>
+</main>
